@@ -8,7 +8,7 @@ export default defineConfig({
   // Other configurations can be added here
   build: {
     // Specify the output directory (default is 'dist')
-    outDir: 'build',
+    outDir: 'dist',
 
     // Enable minification for production builds
     minify: 'terser',
