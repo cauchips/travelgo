@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const PlaceCard = ({ img, title, location, description, type, id, images, }) => {
+const PlaceCard = ({ img, title, location, description, type, id, images, map, }) => {
   const truncateText = (text, maxLength) => {
     if (text.length <= maxLength) {
       return text;
@@ -14,7 +14,7 @@ const PlaceCard = ({ img, title, location, description, type, id, images, }) => 
     onClick={() => {
       window.scrollTo(0, 0);
     }}
-    state={{ img, title, location, description, type, images }}
+    state={{ img, title, location, description, type, images, map }}
     >
       <div className="relative overflow-hidden">
         <img className="w-full h-52 object-cover object-center transition duration-300 transform hover:scale-110" src={img} alt={title} />
@@ -46,6 +46,7 @@ PlaceCard.propTypes = {
   type: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
   images: PropTypes.string,
+  map: PropTypes.string,
 };
 
 export default PlaceCard;
