@@ -9,6 +9,7 @@ import PlacesRoute from "./pages/PlacesRoute";
 import Place from "./pages/Place";
 import PlaceDetails from "./pages/PlaceDetails";
 import DestinationRoute from "./pages/DestinationRoute";
+import DestinationDetails from "./pages/DestinationDetails";
 import About from "./pages/About";
 import BlogsDetails from "./pages/BlogsDetails";
 import AOS from "aos";
@@ -34,8 +35,9 @@ const App = () => {
             <Route path="blogs/:id" element={<BlogsDetails />} />
             <Route path="best-places" element={<PlacesRoute />} />
             <Route exact path="/" component={<Place />} />
-            <Route exact path="/places/:id" component={<PlaceDetails />} />
+            <Route exact path="/places/:id" element={<PlaceDetails />} />
             <Route path="destination" element={<DestinationRoute />} />
+            <Route path="destination/:id" element={<DestinationDetails />}/>
             <Route path="about" element={<About />} />
             <Route path="*" element={<NoPage />} />
           </Route>

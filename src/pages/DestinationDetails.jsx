@@ -1,12 +1,12 @@
+// DestinationDetails.jsx
+import { useLocation } from "react-router-dom";
+import Destination from "../components/Destination/Destination";
 
-import { useLocation } from 'react-router-dom';
-import Places from '../components/Places/Places';
-
-const PlaceDetails = (props) => {
-  const place = useLocation();
+const DestinationDetails = (props) => {
+  const destination = useLocation(); // Ambil parameter title dari URL
   console.log(props, " props");
 
-  const { img, title, location, description, type, images } = place.state;
+  const { img, title, location, description, header } = destination.state;
 
   return (
     <div className="pt-20">
@@ -18,25 +18,20 @@ const PlaceDetails = (props) => {
         />
       </div>
       <div className="container">
+        
         <p className="text-slate-600 text-sm py-3">
-          {" "}
-          {type}: {title}, {location}
+          {title}, {location}
         </p>
+        <img src={header} className="img-fluid" />
         <h1 className="text-2xl font-semibold">{title}</h1>
         <p>{description}</p>
-        <div className="text-center mt-5 mb-10">
-          <img
-            src={images}
-            alt={title}
-            className="image-fluid mx-auto d-block"
-          />
-        </div>
       </div>
-        
+
       {/* All Blogs Section */}
-      <Places />
+      <Destination />
     </div>
   );
 };
 
-export default PlaceDetails;
+
+export default DestinationDetails;

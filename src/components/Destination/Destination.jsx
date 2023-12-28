@@ -7,6 +7,7 @@ import Img4 from "../../assets/destination/kalimantan.jpg";
 import Img5 from "../../assets/destination/sulawesi.jpg";
 import Img6 from "../../assets/destination/papua.jpg";
 import Img7 from "../../assets/destination/jakarta.jpg";
+import Img8 from "../../assets/destination/pulausumatera.jpg"
 
 const DestinationData = [
   {
@@ -14,6 +15,7 @@ const DestinationData = [
     title: "Sumatera",
     location: "Indonesia",
     description: "Explore the beautiful island of Sumatera.",
+    header: Img8,
   },
   {
     img: Img2,

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const BlogCard = ({ image, date, title, description, author }) => {
+const BlogCard = ({ id, image, date, title, description, author }) => {
   const truncateText = (text, maxLength) => {
     if (text.length <= maxLength) {
       return text;
@@ -11,7 +11,7 @@ const BlogCard = ({ image, date, title, description, author }) => {
 
   return (
     <Link
-      to={`/blogs/${title}`}
+      to={`/blogs/${id}`}
       onClick={() => {
         window.scrollTo(0, 0);
       }}
@@ -39,6 +39,7 @@ const BlogCard = ({ image, date, title, description, author }) => {
 };
 
 BlogCard.propTypes = {
+  id: PropTypes.number.isRequired,
   image: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
