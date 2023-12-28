@@ -15,6 +15,7 @@ export default defineConfig({
 
     // Configure external dependencies for smaller bundle size
     rollupOptions: {
+      input: 'src/index.jsc',
       external: ['react', 'react-dom'],
     },
   },
