@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const DestCard = ({ img, title, location, description, header }) => {
+const DestCard = ({ img, title, location, description, header, destinations }) => {
   return (
     <Link to={`/destination/${title}`} 
-    state={{ img, title, location, description, header }}
+    state={{ img, title, location, description, header, destinations }}
     className="relative group">
       <div className="overflow-hidden rounded-lg shadow-md relative group">
         <img
@@ -28,6 +28,7 @@ DestCard.propTypes = {
   description: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   header: PropTypes.string.isRequired,
+  destinations: PropTypes.string.isRequired,
 };
 
 export default DestCard;
