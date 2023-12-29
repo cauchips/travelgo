@@ -1,4 +1,3 @@
-
 import { useLocation } from 'react-router-dom';
 import Places from '../components/Places/Places';
 
@@ -17,29 +16,32 @@ const PlaceDetails = (props) => {
           className="mx-auto h-[300px] w-full object-cover transition duration-700 hover:scale-110"
         />
       </div>
-      <div className="container" style={{ display: 'flex', width: '100%' }}>
-        <div className="left" style={{ width: '70%', paddingRight: '20px' }}>
-          <p className="text-slate-600 text-sm py-3">
-            {type}: {title}, {location}
-          </p>
-          <h1 className="text-2xl font-semibold">{title}</h1>
-          <p>{description}</p>
-          <div className="text-center mt-5 mb-10">
-            <img
-              src={img}
-              alt={title}
-              className="image-fluid mx-auto d-block"
-            />
+      <div className="container">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Column 1 - Text, takes 2/3 of the container */}
+          <div className="col-span-2">
+            <p className="text-slate-600 text-sm py-3">
+              {type}: {title}, {location}
+            </p>
+            <h1 className="text-2xl font-semibold mb-5">{title}</h1>
+            <p className="text-justify">{description}</p>
+            <div className="text-center mt-5 mb-10">
+              <img
+                src={img}
+                alt={title}
+                className="image-fluid mx-auto d-block"
+              />
+            </div>
           </div>
-        </div>
-        <div className="right" style={{ width: '30%', position: 'relative', top: '0' }}>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+
+          {/* Column 2 - Map, takes 1/3 of the container */}
+          <div className="col-span-1 flex flex-col items-center justify-center mb-10 mt-10">
             <iframe
               src={map}
               width="100%"
-              height="50%"
+              height="100%"
               style={{ border: '0' }}
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
@@ -47,7 +49,7 @@ const PlaceDetails = (props) => {
         </div>
       </div>
 
-      {/* All Blogs Section */}
+      {/* All Places Section */}
       <Places />
     </div>
   );
