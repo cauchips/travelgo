@@ -34,7 +34,7 @@ const Navbar = ({ handleOrderPopup }) => {
   useEffect(() => {
     // Simulating fetching discount information
     setTimeout(() => {
-      setDiscountInfo("Limited offer: 25% off on bookings today!");
+      setDiscountInfo("Explore the Wonderful Indonesia");
     }, 1000);
 
     // Update current date and time every second

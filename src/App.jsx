@@ -12,6 +12,8 @@ import DestinationRoute from "./pages/DestinationRoute";
 import DestinationDetails from "./pages/DestinationDetails";
 import About from "./pages/About";
 import BlogsDetails from "./pages/BlogsDetails";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermsAndConditions";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -40,6 +42,8 @@ const App = () => {
             <Route path="destination/:id" element={<DestinationDetails />}/>
             <Route path="about" element={<About />} />
             <Route path="*" element={<NoPage />} />
+            <Route path="privacy-policy" element={<PrivacyPolicy />}/>
+            <Route path="terms-and-conditions" element={<TermsAndConditions />}/>
           </Route>
         </Routes>
       </BrowserRouter>

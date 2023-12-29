@@ -13,8 +13,9 @@ const Destination = ({ handleOrderPopup }) => {
               maxWidth: '100%',
               width: '100%',
             }}
-          >
+          ><div className="h-[300px] overflow-hidden">
             <img
+              className="mx-auto h-[300px] w-full object-cover transition duration-700 hover:scale-110"
               src={Img}// Ganti dengan URL gambar banner yang ingin Anda gunakan
               alt="Banner Keindahan Indonesia"
               style={{
@@ -24,7 +25,7 @@ const Destination = ({ handleOrderPopup }) => {
                 maxWidth: '100vw',
                 maxHeight: '100vh',
               }}
-            />
+            /></div>
           </section>
         <section data-aos="fade-up" className="container mx-auto px-4">
           <div className="max-w-screen-lg mx-auto">
@@ -44,10 +45,10 @@ const Destination = ({ handleOrderPopup }) => {
                 },
               }}
             >
-              Keindahan Indonesia yang Mendunia
+              Indonesia&apos;s World-renowned Beauty
             </h1>
             <p className="text-lg font-semibold mb-6 pl-0 pr-6 lg:pl-0 lg:pr-8 text-left">
-              Indonesia adalah negara yang kaya akan keindahan alam, budaya, dan kuliner. Dari Sabang hingga Merauke, terdapat berbagai destinasi wisata yang dapat memukau mata dan memanjakan hati. Keramahtamahan penduduk lokal yang berpadu dengan keanekaragaman budaya tradisional menambah daya tarik Indonesia. Tak hanya itu, kekayaan flora dan fauna yang masih terjaga juga menjadi daya tarik tersendiri. Semua keindahan ini dapat ditemukan hanya di Indonesia.
+            Indonesia stands as a nation abundant in natural beauty, cultural richness, and culinary delights. From Sabang to Merauke, the country boasts a plethora of captivating tourist destinations that enchant the eyes and warm the heart. The genuine hospitality of the local population, intertwined with the diverse tapestry of traditional cultures, further contributes to Indonesia&apos;s allure. Beyond the warmth of its people, Indonesia&apos;s well-preserved wealth of flora and fauna adds an additional layer of charm. Truly, these unparalleled beauties are uniquely and exclusively found within the borders of Indonesia.
             </p>
             <hr className="my-8 border-gray-300" />
             <DestinationContent handleOrderPopup={handleOrderPopup} />

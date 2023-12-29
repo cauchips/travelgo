@@ -36,7 +36,7 @@ const ResponsiveMenu = ({ showMenu, setShowMenu }) => {
       </div>
       <div className="footer mt-6">
         <h1 className="text-center text-gray-500 text-sm italic">
-          Pesona Indonesia &copy; {new Date().getFullYear()}
+          Wonderful Indonesia &copy; {new Date().getFullYear()}
         </h1>
       </div>
     </div>

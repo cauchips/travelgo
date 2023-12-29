@@ -6,7 +6,7 @@ const DestinationContent = ({ handleOrderPopup }) => {
   return (
     <div className="max-w-screen-lg mx-auto">
       <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-        Jelajahi Berbagai Destinasi Indonesia
+      Explore Various Destinations in Indonesia
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {DestinationData.map((item, index) => (

@@ -4,13 +4,13 @@ const testimonialData = [
   {
     id: 1,
     name: "Roy Kimochi",
-    text: "Indonesia memiliki keindahan alam yang memukau, mulai dari pantai-pantai yang eksotis hingga gunung-gunung yang menakjubkan. Saya sangat terkesan dengan keramahan penduduknya dan kekayaan budayanya.",
+    text: "Indonesia has breathtaking natural beauty, from exotic beaches to stunning mountains. I am deeply impressed by the friendliness of its people and the richness of its culture.",
     img: "https://picsum.photos/101/101",
   },
   {
     id: 2,
-    name: "Salma ",
-    text: "Saya terpesona dengan keanekaragaman budaya Indonesia. Dari Bali yang terkenal hingga ke berbagai daerah lainnya, setiap tempat memiliki daya tariknya sendiri. Pariwisata Indonesia sungguh memikat hati saya.",
+    name: "Salma",
+    text: "I am fascinated by the diversity of Indonesian culture. From the famous Bali to various other regions, each place has its own charm. Indonesia's tourism truly captivates my heart.",
     img: "https://picsum.photos/102/102",
   },
   {

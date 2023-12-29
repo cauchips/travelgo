@@ -7,37 +7,38 @@ const BlogsData = [
   {
     id: 1,
     image: Img1,
-    title: "Spot yang Wajib Kamu Kunjungi saat Liburan ke Pulau Samosir",
+    title: "Must-Visit Spots for Your Vacation on Samosir Island",
     description: `
-      Mau cari destinasi wisata yang pas buat healing di Sumatera Utara? Pulau Samosir bisa jadi opsi terbaik buat Sobat Pesona, nih. Ada banyak spot wajib di Pulau Samosir buat kamu kunjungi ketika sedang main ke sini, mulai dari perbukitan, museum, hingga desa wisata.\n
-      Bukit Holbung
-      \nSpot yang harus Sobat Pesona datangi adalah Bukit Holbung. Di tempat ini, Sobat Pesona bisa bersantai sejenak menikmati pemandangan epic Danau Toba dari ketinggian sembari merasakan sejuknya udara di sekitarnya.\n\nIni adalah paragraf kedua tentang Bukit Holbung dan sekitarnya.
-      Selain cantik dan sejuk, Bukit Holbung ini juga memberikan suasana tenang bagi pengunjungnya. Jadi, pas banget kalau Sobat Pesona sedang butuh space untuk sekedar melepas penat.
+      Looking for a perfect destination for relaxation in North Sumatra? Samosir Island might be the best option for you. There are many must-visit spots on Samosir Island, from hills and museums to cultural villages.\n
+      Holbung Hill
+      \nOne spot you shouldn't miss is Holbung Hill. Here, you can relax and enjoy the epic view of Lake Toba from a height while experiencing the cool air around.\n\nThis is the second paragraph about Holbung Hill and its surroundings.
+      Besides being beautiful and cool, Holbung Hill also provides a peaceful atmosphere for its visitors. So, it's perfect if you need a space to unwind.
 
-      Untuk bisa menikmati hamparan bukit hijau satu ini, kamu bakal dikenakan biaya parkir Rp5.000 untuk motor dan Rp 10.000 untuk mobil. Ini definisi kalau liburan nggak harus mewah dan mahal, Sob!`,
+      To enjoy the expanse of this green hill, you will be charged a parking fee of Rp5,000 for motorcycles and Rp10,000 for cars. This defines that a vacation doesn't have to be luxurious and expensive, right!
+    `,
     author: "Alfito Dwi Putra",
-    date: "Desember 22, 2023",
+    date: "December 22, 2023",
   },
   {
-    id: 1,
+    id: 2,
     image: Img2,
-    title: "Hal Tentang Wakatobi yang Wajib Kamu Tahu",
+    title: "Facts About Wakatobi You Should Know",
     description:
-      "Banyak yang telah membuktikan kalau Wakatobi memiliki area terumbu karang yang sangat indah dan luasnya sampai 118 hektare. Menurut Kementrian Lingkungan Hidup dan Kehutanan, Wakatobi juga memiliki karang atol terpanjang di dunia, dengan panjang 48 kilometer. Jadi nggak heran kalau spesies ikan yang terdapat di Wakatobi sangat berlimpah ruah dan berbagai macam. Taman Nasional Wakatobi berada di kawasan yang strategis, yaitu di Segi Tiga Karang Dunia (Coral Tri-angle Center). Dari 820 jenis karang yang ada di dunia, 750 jenis karang di antaranya ada di Wakatobi. Buat Sobat Pesona yang ingin melihat terumbu karang di Wakatobi, bisa mengunjungi Pulau Tomia, Pulau Wangi-wangi, Pulau Binongko, dan Pulau Hoga.. ",
+      "Many have proven that Wakatobi has a vast and beautiful coral reef area, covering up to 118 hectares. According to the Ministry of Environment and Forestry, Wakatobi also has the longest atoll coral in the world, measuring 48 kilometers. It's no wonder that the species of fish in Wakatobi are abundant and diverse. Wakatobi National Park is located in a strategic area, the Coral Triangle Center. Out of the 820 coral species worldwide, 750 of them are in Wakatobi. For those who want to see the coral reefs in Wakatobi, you can visit Tomia Island, Wangi-wangi Island, Binongko Island, and Hoga Island.",
     author: "Jonathan Chandra",
-    date: "Desember 12, 2023",
+    date: "December 12, 2023",
   },
   {
-    id: 1,
+    id: 3,
     image: Img3,
-    title: "Destinasi Wisata Budaya Bali yang Sayang Dilewatkan",
+    title: "Don't Miss These Cultural Destinations in Bali",
     description:
-      "Pura Ulun Danu berada di Danau Beratan, Desa Candikuning, Kecamatan Baturiti, Kabupaten Tabanan, Bali. Pura ini juga salah satu tempat wisata sejarah di Bali. Pura Ulun Danu pernah menjadi gambar dalam mata uang Rp 50 ribu tahun edisi tahun 2016 lho. Kalau air danau sedang naik, kamu akan melihat seolah pura mengapung di danau.Sobat Pesona bisa menikmati keindahan danau atau menikmati wahana air. Kamu bisa berkeliling Danau Beratan menggunakan speed boat dengan biaya Rp150.000,- untuk 4 orang atau bebek air Rp40.000.- untuk 2 orang. Di sini juga ada penyewaan perahu lho.Pura Ulun Danu mulai buka jam 08.00-18.00 WITA dengan tiket masuk Rp30.000,-.",
+      "Ulun Danu Temple is located on Lake Beratan, Candikuning Village, Baturiti District, Tabanan Regency, Bali. This temple is also one of the historical attractions in Bali. Ulun Danu Temple was featured on the Rp 50,000 banknote in the 2016 edition. When the lake water is high, you will see the temple seemingly floating on the lake. You can enjoy the beauty of the lake or take part in water activities. You can go around Lake Beratan by speed boat at a cost of Rp150,000 for 4 people or a duck boat at Rp40,000 for 2 people. Ulun Danu Temple is open from 08:00 to 18:00 WITA with an entrance fee of Rp30,000.",
     author: "Suryo Aji",
-    date: "Desember 10, 2023",
+    date: "December 10, 2023",
   },
-
 ];
+
 
 const BlogsComp = () => {
   return (

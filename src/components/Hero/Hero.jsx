@@ -6,16 +6,16 @@ const Hero = () => {
           data-aos="fade-up"
           className="text-6xl font-extrabold mb-2 mt-8"
         >
-          Pesona <span className="text-red-500">Indonesia</span>
+          Wonderful <span className="text-red-500">Indonesia</span>
         </p>
         <p
           data-aos="fade-up"
           data-aos-delay="300"
           className="text-4xl font-bold mb-4 mt-4"
         >
-          Temukan Keindahan Indonesia
+          Discover the Beauty of Indonesia.
         </p>
-        <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-md border border-transparent transition duration-300 ease-in-out transform hover:scale-105 hover:rotate-3 hover:shadow-lg">
+        <button onClick={handleButtonClick} className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-md border border-transparent transition duration-300 ease-in-out transform hover:scale-105 hover:rotate-3 hover:shadow-lg">
           Explore Now
         </button>
       </div>
@@ -23,4 +23,9 @@ const Hero = () => {
   );
 };
 
+const handleButtonClick = () => {
+  window.scrollTo({
+    top: 660,
+    behavior: 'smooth' // This makes the scroll smooth
+  });}
 export default Hero;

@@ -70,7 +70,7 @@ const DestinationData = [
     img: Img2,
     title: "Java",
     location: "Indonesia",
-    description: "Explore the diverse and culturally rich island of Jawa.",
+    description: "Explore the diverse and culturally rich island of Java.",
     header: Img20,
     destinations: [
       {
