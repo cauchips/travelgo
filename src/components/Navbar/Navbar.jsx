@@ -12,7 +12,7 @@ export const NavbarLinks = [
     link: "/",
   },
   {
-    name: "Destination",
+    name: "Destinations",
     link: "/destination",
   },
   {
@@ -34,7 +34,7 @@ const Navbar = ({ handleOrderPopup }) => {
   useEffect(() => {
     // Simulating fetching discount information
     setTimeout(() => {
-      setDiscountInfo("Explore the Wonderful Indonesia");
+      setDiscountInfo("Explore the Wonderful Indonesia!");
     }, 1000);
 
     // Update current date and time every second
